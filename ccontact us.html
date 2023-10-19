@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  
+   <meta charset="utf-8" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style type="text/css">
+  <style type="text/css">
+  body {
+  background-color:#AAAAAA;
+  height: 100%;
+  width: 100%;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+
+}
+/*=======================================================
+      SIDEBAR
+========================================================*/
+
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#5fa2db;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:20px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#212121;
+ font-family: arial;
+font-size: 20px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+margin:25px 0;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+/*text-decoration-color:#212121; */
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+
+}
+
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#212121;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+/*=======================================================
+            HEADER
+========================================================*/
+.header {
+  padding: 2px;
+  text-align: center;
+  background:   #DEB887;
+  color: white;
+  font-size: 15px;
+}
+
+img{
+  padding:  10px 5px 10px 5px;
+  align-content: center;
+}
+
+/*=======================================================
+            CONTENT
+========================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #AAAAAA;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<body>
+   <div class="area"></div>
+<nav class="main-menu">
+            <ul>
+              
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="services.html">
+                        <i class="fa fa-tasks fa-2x"></i>
+                        <span class="nav-text">
+                            Services
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="ccontact us.html">
+                       <i class="fa fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                            Contact Us
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="aboutpro.html">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            About
+                        </span>
+                    </a>
+                   
+                </li>
+
+            <ul class="signup">
+                <li>
+                   <a href="signup.html">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Sign Up
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+        <div class="header">
+          <h1>Etema Park</h1>
+          <h4>Africa's Wildlife Park</h4>
+        </div>
+ <div class="container">
+<div class="row">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+ <div class="column">
+    <img src="img/WhatsApp Image 2020-12-11 at 9.28.39 PM.jpeg" style="width: 100%">
+    </div>
+<div class="column">
+
+<form action="/action_page.php">
+  <div class="form-group">
+    <p><label for="Full Names">Full Names:</label></p>
+    <input type="word-spacing" class="form-control" placeholder="Your Names" id="word-spacing">
+  </div>
+  <div class="form-group">
+    <p><label for="email">Email address:</label></p>
+    <input type="email" class="form-control" placeholder="Enter email" id="email">
+  </div>
+  <div class="form-group">
+    <p><label for="Phone Number">Phone number:</label></p>
+    <input type="figure" class="form-control" placeholder="Phone Number" id="figure">
+  </div>
+  <div class="form-group">
+    <p><label for="Message">Message:</label></p>
+    <input type="word-spacing" class="form-control" id="word-spacing" width="50%" height="50%">
+  </div>
+    <label class="form-check-label">
+      <p><input class="form-check-input" type="checkbox" name="remember" required> I agree on terms and policy.</p>
+      <p><div class="valid-feedback">Valid.</div></p>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </label>
+  <div class="form-group">
+     <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

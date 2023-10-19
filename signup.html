@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	
+</head>
+<body>
+	  <style>
+       body {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  min-height: 100vh;
+		  background: #AAAAAA;
+			}
+			.btn {
+		  padding: 8px 20px;
+		  border-radius: 0;
+		  overflow: hidden;
+
+		}
+		.form-input {
+		  --input-default-border-color: white;
+		  --input-border-bottom-color: white;
+		  
+		  input {
+		    color: white;
+		  }
+		}
+		.login-form {
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  padding: 50px 40px;
+		  color: white;
+		  background: rgba(0, 0, 0, 0.8);
+		  border-radius: 10px;
+		  box-shadow: #212121
+
+		  h1 {
+		    margin: 0 0 24px 0;
+		  }
+
+		  .form-input {
+		    margin: 12px 0;
+		  }
+
+		  .btn {
+		    width: 100%;
+		    margin: 18px 0 9px 0;
+		  }
+		}
+		input[type=email], input[type=password] {
+		  width: 100%;
+		  padding: 12px 40px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  box-sizing: border-box;
+		}
+		button {
+		  background-color: #5fa2db;
+		  color: white;
+		  padding: 10px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		}
+		
+		img.avatar {
+		  text-align: center;
+		  width:100%;
+		  border-radius: 50%;
+		  align-content: center;
+		}
+
+              </style>
+             
+            <form class="login-form">
+			  <h1>SIGN IN</h1>
+			   <div class="form-input">
+			   <img src="img/default-avatar.png" alt="Avatar" class="avatar">
+			    
+			  </div>
+			  <div class="form-input">
+			    <input type="email" name="email" id="email" placeholder=" Email... " autocomplete="off"  required />
+			    
+			  </div>
+			  <div class="form-input">
+			    <input type="password" name="password" id="password" placeholder="Password... " autocomplete="off"  required />
+		
+			  </div>
+			  <div class="form-input">
+			    <input type="password" name="password" id="password" placeholder="Confirm Password... " autocomplete="off"  required />
+			  </div>
+			  <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+			  <button type="submit">SIGN in</button>
+			  
+			</form>
+</body>
+</html>

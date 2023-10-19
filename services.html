@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <link rel="stylesheet"type="text/css"href="services.css">
+   <meta charset="utf-8" />
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+ <style type="text/css">
+  body {
+  background-color:#AAAAAA;
+  height: 100%;
+  width: 100%;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+
+}
+/*=======================================================
+      SIDEBAR
+========================================================*/
+
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#5fa2db;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:20px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#212121;
+ font-family: arial;
+font-size: 20px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+margin:25px 0;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+/*text-decoration-color:#212121; */
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+
+}
+
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#212121;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+/*=======================================================
+            CONTENT
+========================================================*/
+.header {
+  padding: 2px;
+  text-align: center;
+  background:   #DEB887;
+  color: white;
+  font-size: 15px;
+  
+}
+
+/*=======================================================
+      CONTENT
+========================================================*/
+
+#main{
+  width: 2200%;
+}
+
+img{ border-radius: 50%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   align-items: center;
+  justify-content: center;
+    width: 50%;}
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/*html,
+body {
+  
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  
+  width: 80%;
+  height:auto;
+  margin: 0;
+  padding: 0;
+
+ 
+}*/
+
+
+.card {
+  position: relative;
+   justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  padding-left: 30px; 
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Light blue cover above the slide show*/
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 900;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(140, 22, 115, 0.2);
+}
+
+.card_part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+  transform: translateX( 700px );
+  background-image: url(http://www.xtremespots.com/wp-content/uploads/2012/11/Quad-Biking-620x413.jpg);
+  
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+}
+
+
+.card_part.card_part-two {
+  z-index: 6;
+  background-image: url( http://www.kws.go.ke/sites/default/files/styles/park_node_style/public/Nairobi%20National%20Park_0_0.jpg?itok=B_-j3-ov );
+  animation-delay: 7s;
+}
+
+.card_part.card_part-three {
+  z-index: 5;
+  background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/07/90/bd/9e.jpg );
+  animation-delay: 14s;
+}
+
+.card_part.card_part-four {
+  z-index: 4;
+  background-image: url(https://res.klook.com/image/upload/c_fill,w_1160,h_460,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/s4gngqwlpe6eqij4ink0.webp);
+  animation-delay: 21s;
+}
+p {
+  color: black;
+  text-indent: 30px;
+padding: 2px 100px 2px 100px;
+  text-align: center;
+  font-weight: inherit;
+  font-size: 15px;
+
+@keyframes opaqTransition {
+  3% { transform: translateX( 0 ); }
+  25% { transform: translateX( 0 ); }
+  28% { transform: translateX( -700px ); }
+  100% { transform: translateX( -700px ); }
+}
+
+
+ </style>
+ <div class="area"></div>
+ <nav class="main-menu">
+            <ul>
+              
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="services.html">
+                        <i class="fa fa-tasks fa-2x"></i>
+                        <span class="nav-text">
+                            Services
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="ccontact us.html">
+                       <i class="fa fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                            Contact Us
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="aboutpro.html">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            About
+                        </span>
+                    </a>
+                   
+                </li>
+
+            <ul class="signup">
+                <li>
+                   <a href="signup.html">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Sign Up
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+        
+     <div id="main">
+      <div class="header">
+          <h1>Etema Park</h1>
+          <h4>Africa's Wildlife Park</h4>
+          <h2>Services</h2>
+        </div>
+     <p>With a fantastic range of animals and experiences for the whole family to enjoy, you're sure to love your day at Etema Park! Book your tickets today. We offer a variety of activities ranging from bird watching, amaizing game drives and what better way to end the  day than with the breath taking sunset view  ... Please note we are a cash free site...</p>
+
+  <div class="card">
+  
+  <div class="card_part card_part-one">
+  </div>
+  
+   <!-- Photo 2 -->
+  <div class="card_part card_part-two">
+
+  </div>
+
+  <!-- Photo 3 -->
+  <div class="card_part card_part-three">
+  </div>
+
+  <!-- Photo 4 -->
+  <div class="card_part card_part-four">
+  </div>
+
+</div>
+</div>  
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	 <meta charset="utf-8" />
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+<style type="text/css"> 
+	body {
+  background-color:#AAAAAA;
+  height: 100%;
+	width: 100%;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+
+}
+/*=======================================================
+			SIDEBAR
+========================================================*/
+
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#5fa2db;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:20px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#212121;
+ font-family: arial;
+font-size: 20px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+margin:25px 0;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+/*text-decoration-color:#212121; */
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+
+}
+
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#212121;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+/*=======================================================
+            HEADER
+========================================================*/
+.header {
+  padding: 2px;
+  text-align: center;
+  background:   #DEB887;
+  color: white;
+  font-size: 15px;
+}
+
+/*=======================================================
+			CONTENT
+========================================================*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #AAAAAA;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+p {
+  color: black;
+ font-size: 15px;
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+</style> 
+
+
+
+
+
+
+
+
+
+
+
+ 
+<title>About</title>
+</head>
+
+<body>
+	<div class="area"></div>
+ <nav class="main-menu">
+            <ul>
+              
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="services.html">
+                        <i class="fa fa-tasks fa-2x"></i>
+                        <span class="nav-text">
+                            Services
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="ccontact us.html">
+                       <i class="fa fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                            Contact Us
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="aboutpro.html">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            About
+                        </span>
+                    </a>
+                   
+                </li>
+
+            <ul class="signup">
+                <li>
+                   <a href="signup.html">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Sign Up
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+        <div class="header">
+          <h1>Etema Park</h1>
+          <h4>Africa's Wildlife Park</h4>
+        </div>
+<div class="container">
+  <div class="row">
+ 
+ <div class="column">
+      <img src="img/WhatsApp Image 2020-12-12 at 1.31.50 PM.jpeg" alt="lion in a park" style="width:100%;"> 
+    </div>
+ <div class="column">
+<P>Etema Park was started in 1890 by 4 renowned persons. 
+<b>Beatrice Mugoiri, Sarah Wanjiru, Brian Liyosi and James Mogusu</b> were the founders of etema part. 
+Etema park was previously just a normal playground for kids until the founders decided to spice it up by adding a zoo, camp, and basically everything that etema park is. 
+Etema parked was closed for about an year before they reopened with at least 10 lions and 13elephants. 
+Monkeys then started streaming in as they found the tress in etema park great and very habitable. 
+As the years rolled on more animals were brought in and now it’s the most popular park.</p>
+
+<P>The zoo part is the largest and consists of about 2000 animals and insects.
+Camping is also becoming famous because of its location, the beauty around it. 
+The etema park lake home of the flamingoes is slowly but surely gaining its own fame.
+Hot springs that had for sometime dried due to the consistent drought in the country are now back bigger better and more beautiful.</P>
+
+
+<h2>Vision and mission</h1>
+
+<p>
+<b>our vision:</b> A center of entertainment that brings out the fun part in everyone
+
+</p>
+<p>
+<b>our mission:</b> To provide efficient services,a home to our animals and let everyone who visits us have a fantanstic time.
+
+<h2>Location</h2>
+
+<p> 
+Etema park is located in county  number 13 that is Tharaka Nithi county.
+It is 2.5km away from chuka constituency.
+Transport for all members who book their reservations online is provided for from the main capital city Nairobi.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
